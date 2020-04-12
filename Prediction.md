@@ -27,30 +27,30 @@ fancyRpartPlot(treemod$finalModel, main="Rattle plot of the decision tree classi
 
 
 confusionMatrix(predict(treemod, sub_test), sub_test$classe)
-## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction    A    B    C    D    E
-##          A 1016  331  316  263  171
-##          B   17  253   17  135  135
-##          C   64   83  296   97  102
-##          D   15   92   55  148   99
-##          E    4    0    0    0  214
-## 
-## Overall Statistics
-##                                          
-##                Accuracy : 0.4912         
-##                  95% CI : (0.4754, 0.507)
-##     No Information Rate : 0.2845         
-##     P-Value [Acc > NIR] : < 2.2e-16      
-##                                          
-##                   Kappa : 0.3346         
-##                                          
-##  Mcnemar's Test P-Value : < 2.2e-16      
-## 
-## Statistics by Class:
-## 
-##                      Class: A Class: B Class: C Class: D Class: E
+ Confusion Matrix and Statistics
+ 
+           Reference
+Prediction    A    B    C    D    E
+          A 1016  331  316  263  171
+          B   17  253   17  135  135
+          C   64   83  296   97  102
+          D   15   92   55  148   99
+          E    4    0    0    0  214
+ 
+ Overall Statistics
+                                          
+                Accuracy : 0.4912         
+                  95% CI : (0.4754, 0.507)
+     No Information Rate : 0.2845         
+     P-Value [Acc > NIR] : < 2.2e-16      
+                                          
+                   Kappa : 0.3346         
+                                          
+  Mcnemar's Test P-Value : < 2.2e-16      
+ 
+ Statistics by Class:
+ 
+                      Class: A Class: B Class: C Class: D Class: E
 ## Sensitivity            0.9104  0.33333  0.43275  0.23017  0.29681
 ## Specificity            0.6149  0.90392  0.89318  0.92043  0.99875
 ## Pos Pred Value         0.4845  0.45422  0.46106  0.36186  0.98165
